@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ScrollView_Example' do
+  pod 'ScrollView', :path => '../'
+  pod 'PullToRefreshKit'
+  target 'ScrollView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
