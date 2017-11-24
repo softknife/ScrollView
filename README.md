@@ -1,4 +1,6 @@
 
+![logo](https://github.com/EricYellow/PopularSite/blob/master/logo.png)
+
 # ScrollView
 
 [![CI Status](http://img.shields.io/travis/hjphfut@163.com/ScrollView.svg?style=flat)](https://travis-ci.org/hjphfut@163.com/ScrollView)
@@ -85,4 +87,4 @@ ScrollView is available under the MIT license. See the LICENSE file for more inf
 **************
 
 中文说明: 
-这个框架可以解决 UIScrollView和UITableView 手势冲突的问题, 当我们将UITableView放到UIScrollView上面时,经常会遇到手势冲突的问题, 本人这个自定义的ScrollView可以解决这个问题.
+- 当我们将UITableView放到UIScrollView上面时,经常会遇到手势冲突的问题, 这个自定义的ScrollView可以解决这个问题.
