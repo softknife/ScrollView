@@ -10,7 +10,7 @@ import UIKit
 
 // MARK:- Defination
 @objc
-protocol ScrollViewDelegate : class
+public protocol ScrollViewDelegate : class
 {
     @objc optional func  ge_scrollViewWillBeginDragging(_ scrollView : ScrollView)
     
@@ -26,22 +26,22 @@ protocol ScrollViewDelegate : class
     
 }
 
-class ScrollView: UIView {
+public class ScrollView: UIView {
     
     
     /// 如果分页,那么会调用如下方法
-    var scrollToPage : ((ScrollView.Page)->())?
+    public var scrollToPage : ((ScrollView.Page)->())?
     
-    weak var delegate : ScrollViewDelegate?
+    public weak var delegate : ScrollViewDelegate?
     
-    var direction : Direction = .horizontal
+    public var direction : Direction = .horizontal
     
-    var pageEnable = true
-    var bounces = true
+    public var pageEnable = true
+    public var bounces = true
     
-    var sensibility : ScrollSensibility = .default
+    public var sensibility : ScrollSensibility = .default
     
-    var duration : TimeInterval = 0.5
+    public var duration : TimeInterval = 0.5
     
     
     
@@ -51,7 +51,7 @@ class ScrollView: UIView {
     private var startPoint : CGPoint?
     
     
-    init(frame: CGRect , contentSize:CGSize) {
+    public init(frame: CGRect , contentSize:CGSize) {
         
         self.contentSize = contentSize
         
@@ -61,7 +61,7 @@ class ScrollView: UIView {
         
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -70,7 +70,7 @@ class ScrollView: UIView {
 extension ScrollView{
     
     
-    enum Direction {
+    public  enum Direction {
         /// 任意方向
         //        case any
         /// 水平
@@ -80,12 +80,12 @@ extension ScrollView{
     }
     
     
-    struct Page {
+    public  struct Page {
         let x : Int
         let y : Int
     }
     
-    enum ScrollSensibility:CGFloat {
+   public  enum ScrollSensibility:CGFloat {
         case `default`  = 600.0
         case active     = 300.0
         case lazy       = 800.0
@@ -123,7 +123,7 @@ extension ScrollView{
 extension ScrollView{
     
     
-    func addChildView(_ view:UIView, index:Int)  {
+    public func addChildView(_ view:UIView, index:Int)  {
         
         contentView.addSubview(view)
         
@@ -142,7 +142,7 @@ extension ScrollView{
     /// - Parameters:
     ///   - offset: offset
     ///   - animated: 是否需要动画
-    func setContentOffset(offset:CGPoint,animated:Bool){
+    public func setContentOffset(offset:CGPoint,animated:Bool){
         
         var rect = contentView.frame
         
