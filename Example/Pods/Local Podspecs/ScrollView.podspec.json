@@ -1,6 +1,6 @@
 {
   "name": "ScrollView",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "a replacement for UIScrollView.",
   "description": "This framework is just a replacement for UIScrollView , you can use it as a container for multi-tableView",
   "homepage": "https://github.com/EricYellow/ScrollView",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/EricYellow/ScrollView.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"

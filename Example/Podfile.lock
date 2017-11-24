@@ -1,6 +1,6 @@
 PODS:
   - PullToRefreshKit (0.8.2)
-  - ScrollView (0.1.0)
+  - ScrollView (0.1.1)
 
 DEPENDENCIES:
   - PullToRefreshKit
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   PullToRefreshKit: 0a2a019bf094b8beba18c8a1bedfb1fb67ee70fd
-  ScrollView: 7011dab9c247a0a59de953ba2f44c678473be1bd
+  ScrollView: f9100d2313c95ee02fb62af64dadcc9b628ab13e
 
 PODFILE CHECKSUM: c18919e3cc91706b4bfce92f39a3894395c3b9cd
 

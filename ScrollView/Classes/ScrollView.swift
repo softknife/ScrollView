@@ -45,10 +45,11 @@ public class ScrollView: UIView {
     
     
     
-    private (set) var contentSize:CGSize
+    private(set) var contentSize:CGSize
     private(set) var contentView : UIView!
-    private (set) var panGesture : UIPanGestureRecognizer!
+    private(set) var panGesture : UIPanGestureRecognizer!
     private var startPoint : CGPoint?
+    
     
     
     public init(frame: CGRect , contentSize:CGSize) {
@@ -85,7 +86,7 @@ extension ScrollView{
         let y : Int
     }
     
-   public  enum ScrollSensibility:CGFloat {
+    public  enum ScrollSensibility:CGFloat {
         case `default`  = 600.0
         case active     = 300.0
         case lazy       = 800.0
@@ -99,7 +100,7 @@ extension ScrollView{
 extension ScrollView{
     
     
-    fileprivate func config(){
+    private func config(){
         
         //        clipsToBounds = true
         backgroundColor = UIColor.clear
@@ -204,7 +205,7 @@ extension ScrollView{
     /// pan手势函数
     ///
     /// - Parameter pan: pan gesture
-    @objc fileprivate func pan(_ pan:UIPanGestureRecognizer){
+    @objc private func pan(_ pan:UIPanGestureRecognizer){
         
         
         switch pan.state {
