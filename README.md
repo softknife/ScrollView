@@ -12,7 +12,7 @@ You can you this scrollView as Multi-TableView's containerView, it is compatible
 
 ## Example
 
-![](https://github.com/EricYellow/ScrollView/tree/master/Example/ScrollView.gif)
+![](demo.gif)
 
 ```objc
 import ScrollView
