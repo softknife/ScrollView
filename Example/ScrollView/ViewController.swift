@@ -32,12 +32,13 @@ extension ViewController {
         let scrollFrame = CGRect(x:0,y:0,width:UIScreen.main.bounds.width,height:UIScreen.main.bounds.height)
         let subviewsCount = 3
 
-        scrollView = ScrollView(frame:scrollFrame , contentSize: CGSize(width: scrollFrame.width * subviewsCount.cgfloat, height: scrollFrame.height))
+        scrollView = ScrollView(frame:scrollFrame , contentSize: CGSize(width: scrollFrame.width * CGFloat(subviewsCount), height: scrollFrame.height))
         
         view.addSubview(scrollView)
         
         scrollView.scrollToPage = { page in
-            print("default horizontal scroll to page:\(page.x)")
+            let desc = "default horizontal scroll to page:\(page.x)"
+            print(desc)
         }
         
         

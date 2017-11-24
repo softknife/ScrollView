@@ -82,8 +82,8 @@ extension ScrollView{
     
     
     public  struct Page {
-        let x : Int
-        let y : Int
+       public let x : Int
+       public let y : Int
     }
     
     public  enum ScrollSensibility:CGFloat {
