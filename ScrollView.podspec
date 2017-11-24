@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ScrollView'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'a replacement for UIScrollView.'
 
 # This description is used to generate tags and improve search results.
