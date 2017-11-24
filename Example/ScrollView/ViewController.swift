@@ -29,7 +29,10 @@ extension ViewController {
     
     private func configSubviews(){
         
-        let scrollFrame = CGRect(x:0,y:0,width:UIScreen.main.bounds.width,height:UIScreen.main.bounds.height)
+        title = "测试自定义ScrollView"
+        
+        
+        let scrollFrame = CGRect(x:0,y:64,width:UIScreen.main.bounds.width,height:UIScreen.main.bounds.height-64)
         let subviewsCount = 3
 
         scrollView = ScrollView(frame:scrollFrame , contentSize: CGSize(width: scrollFrame.width * CGFloat(subviewsCount), height: scrollFrame.height))
