@@ -10,7 +10,7 @@
 
 ## Description
 Replacement for UIScrollView.
-You can you this scrollView as Multi-TableView's containerView, it is compatible with UITableViews.
+You can use this scrollView as Multi-TableView's containerView, it is compatible with UITableViews.
 
 ## Example
 
